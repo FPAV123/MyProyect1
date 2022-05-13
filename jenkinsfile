@@ -1,0 +1,9 @@
+node{
+stage('SCM Checkout') {
+  git 'https://github.com/FPAV123/MyProyect1'
+}
+stage ('Compile-Package){
+sh 'mvn package'
+}
+
+}
